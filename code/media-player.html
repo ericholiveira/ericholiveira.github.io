@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+// Sample Media Player using HTML5's Media API
+//
+// Ian Devlin (c) 2012
+// http://iandevlin.com
+// http://twitter.com/iandevlin
+//
+// This was written as part of an article for the February 2013 edition of .net magazine (http://netmagazine.com/)
+-->
+<html lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<meta property="og:site_name" content="Erich">
+    <meta property="og:url" content="http://www.ericholiveira.com/code/media-player.html">
+    <meta property="og:title" content="Teste video">
+    <meta property="og:image" content="https://i.ytimg.com/vi/M-P3l9ezaF8/hqdefault.jpg">
+		<meta property="og:type" content="video">
+    <meta property="og:video:url" content="http://www.ericholiveira.com/code/media-player.html">
+    <meta property="og:video:secure_url" content="http://www.ericholiveira.com/code/media-player.html">
+    <meta property="og:video:type" content="text/html">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
+		<title>Sample Media Player using HTML5's Media API</title>
+		<link href='media-player.css' rel='stylesheet' />
+		<script src='media-player.js'></script>
+	</head>
+<body>
+	<h1>Sample Media Player using HTML5's Media API</h1>
+	<div id='media-player'>
+		<video  id="media-video" controls></video>
+		<iframe id="video1" src="http://player.vimeo.com/video/59749737"></iframe>
+		<iframe id="video2" src="https://youtube.com/embed/M-P3l9ezaF8"></iframe>
+		<div id='media-controls'>
+			<button id='video1' onclick='changeVideo1();'>Video1</button>
+			<button id='video2'onclick='changeVideo2();'>Video2</button>
+		</div>
+	</div>
+</body>
+</html>
